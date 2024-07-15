@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(../font/LuckiestGuy.ttf);
+}
+
+body {
+
+    font-family: "Luckiest Guy", cursive;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+span {
+    display: inline-block;
+}
+
+p {
+    font-family: "Patrick Hand SC", cursive;
+}
+
+.header {
+    background-image: url(../images/header.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    padding-left: 60vw;
+    padding-top: 30vw;
+    padding-bottom: 20vw;
+}
+
+h3 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #864516;
+    font-family: font1;
+}
+
+h1 {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #864516;
+    font-family: font1;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .header {
+        background-image: url(../images/mobile.png);
+        padding-left: 10vw;
+        padding-top: 30vw;
+        padding-bottom: 142vw;
+    }
+}
